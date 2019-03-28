@@ -11,7 +11,7 @@ import pandas as pd
 from absl import app
 
 TOP_SENDERS = 5
-
+#X_LIM = [datetime(1998, 10, 1), datetime(2002, 9, 30)]
 
 def print_instructions():
     '''prints instructionson stdin'''
@@ -86,7 +86,7 @@ def get_top_senders_graph(df, top_senders):
         title="Top Senders By Quarter - Emails Sent",
         linewidth=2.0
     )
-
+    # ts_plot.set_xlim(X_LIM)
     return ts_plot
 
 
@@ -118,6 +118,7 @@ def get_top_senders_received(df, top_senders):
         title="Top Senders By Quarter - Unique Emails Received",
         linewidth=2.0
     )
+    # tr_plot.set_xlim(X_LIM)
     # Fix ticklabels as barplot is not that nice
     ticklabels = [''] * len(emails_by_quarter.index)
     ticklabels = [item.strftime('%b') for item in emails_by_quarter.index]
