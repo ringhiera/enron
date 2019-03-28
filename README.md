@@ -13,7 +13,7 @@
 - Activate the environment (as above)
 - Run the script as  ```python summarize-enron.py <path-to-input.csv>```
 - the files are saved as
-- - path-to-input-summary.csv
-- - path-to-input-top-sender-sent.png
-- - path-to-input-top-sender-received.png
+ - path-to-input-summary.csv
+ - path-to-input-top-sender-sent.png
+ - path-to-input-top-sender-received.png
 
