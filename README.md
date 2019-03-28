@@ -11,6 +11,7 @@
 
 ## Run
 * Activate the environment (as above)
+* cd to the appropriate directory
 * Run the script as  ```python summarize-enron.py <path-to-input.csv>```
 * the files are saved as
     - path-to-input-summary.csv
